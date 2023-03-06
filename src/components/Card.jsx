@@ -1,8 +1,8 @@
-const Card = () => {
+const Card = ({ className }) => {
 	return (
-		<section className='rounded-xl h-2/5 w-1/3 bg-slate-500'>
+		<section className={`${className} rounded-xl bg-slate-600`}>
 			<h1>some stuff</h1>
-			<h3>some other stuf</h3>
+			<h3>some other stuff</h3>
 		</section>
 	)
 }
