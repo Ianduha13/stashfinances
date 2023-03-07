@@ -1,11 +1,9 @@
-import express from "express"
-import cors from "cors"
-import connectDb from "../config/connectDb"
-import * as dotenv from "dotenv"
+const express = require("express")
+const cors = require("cors")
+const dotenv = require("dotenv").config()
+const connect = require("../config/connect")
 
-dotenv.config()
-
-connectDB()
+connect()
 
 const app = express()
 const PORT = 3008
